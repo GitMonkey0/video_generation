@@ -2,7 +2,7 @@
 
 本仓库跟踪 DiffSynth-Studio 上游源码，保存 Wan 训练、推理链路分析，并在上游目录之外承载本地扩展。
 
-- `WAN_COMMIT_ANALYSIS.md`：对应源码版本的模型加载、数据处理、训练、推理及运行边界说明。
+- `docs/WAN_COMMIT_ANALYSIS.md`：对应源码版本的模型加载、数据处理、训练、推理及运行边界说明。
 - `DiffSynth-Studio/`：上游 submodule，当前锁定 commit `60b709c4dab8eeabce06ee9bc168328ed4c780e8`；允许同步上游版本，但不做本地源码定制。
 - `AGENTS.md`：上游同步、本地扩展和文档维护约束。
 
@@ -33,7 +33,7 @@ git diff --submodule=log -- DiffSynth-Studio
 检查扩展兼容性、更新 README 的版本标识并复核受影响的分析文档，再按需提交外层仓库：
 
 ```bash
-git add DiffSynth-Studio README.md WAN_COMMIT_ANALYSIS.md
+git add DiffSynth-Studio README.md docs/WAN_COMMIT_ANALYSIS.md
 git commit -m "Update DiffSynth-Studio upstream version"
 git push
 ```
