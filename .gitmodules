@@ -1,0 +1,4 @@
+[submodule "DiffSynth-Studio"]
+	path = DiffSynth-Studio
+	url = https://github.com/modelscope/DiffSynth-Studio.git
+	branch = main
